@@ -1,10 +1,10 @@
 #include "Player.h"
 
-std::string Player::getName(){
+std::string Player::getName() const {
     return this->name;
 }
 
-char Player::getChoice(){
+char Player::getChoice() const {
     return this->choice;
 }
 
