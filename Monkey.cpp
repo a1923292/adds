@@ -1,2 +1,3 @@
 #include "Monkey.h"
-#include <string>
+
+Monkey::Monkey() : Move("Monkey",{"Ninja","Robot"},{"Rock","Paper","Scissors"}) {}

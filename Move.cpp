@@ -7,3 +7,7 @@ std::string Move::getName() const {
 std::vector<std::string> Move::getWinningCombinations() const {
     return this->winningCombinations;
 }
+
+std::vector<std::string> Move::getForbiddenChoices() const {
+    return this->forbiddenChoices;
+}

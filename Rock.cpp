@@ -1,5 +1,3 @@
 #include "Rock.h"
-#include <string>
 
-
-const std::vector<std::string> Rock::winningChoices = {"Scissors"};
+Rock::Rock() : Move("Rock",{"Scissors"},{"Monkey","Robot","Pirate","Ninja","Zombie"}) {}
