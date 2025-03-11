@@ -4,10 +4,10 @@ std::string Player::getName() const {
     return this->name;
 }
 
-char Player::getChoice() const {
+Move* Player::getChoice() const {
     return this->choice;
 }
 
-void Player::setChoice(char c){
-    this->choice = c;
+void Player::setChoice(Move* choice){
+    this->choice = choice;
 }

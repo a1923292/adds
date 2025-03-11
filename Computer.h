@@ -1,12 +1,13 @@
 #pragma once
 
 #include "Player.h"
+#include "Move.h"
 
 class Computer : public Player {
     private:
     public:
         Computer() : Player("Computer",'R') {}
-        char makeMove() override;
+        Move* makeMove() override;
 };
 
 

@@ -1,5 +1,6 @@
 #include "Computer.h"
 
-char Computer::makeMove(){
-    return Computer::getChoice();
+Move* Computer::makeMove(){
+    Move* computerMove = new Move("Rock");
+    return computerMove;
 }

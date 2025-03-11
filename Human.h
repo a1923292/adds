@@ -2,6 +2,7 @@
 
 #include <string>
 #include "Player.h"
+#include "Move.h"
 #include <iostream>
 
 class Human : public Player {
@@ -9,5 +10,5 @@ class Human : public Player {
     public:
         Human(std::string name_) : Player(name_) {}
         Human() : Player("Human") {}
-        char makeMove() override;
+        Move* makeMove() override;
 };
