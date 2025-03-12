@@ -6,24 +6,26 @@
 
 int main(void){
 
-    // std::string name;
-    // std::cout << "Enter your name: ";
-    // std::cin >> name;
+    // get to work and compile
 
-    // Player* player = new Human(name);
-    // Player* computer = new Computer();
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::cin >> name;
 
-    // Referee ref;
+    Player* player = new Human(name);
+    Player* computer = new Computer();
 
-    // Player* winner = ref.refGame(player,computer);
+    Referee ref;
 
-    // if (winner == player){
-    //     std::cout << player->getName() << " Won\n";
-    // } else if (winner == nullptr) {
-    //     std::cout << "Draw\n"; 
-    // } else {
-    //     std::cout << "Computer Won\n"; 
-    // }
+    Player* winner = ref.refGame(player,computer);
+
+    if (winner == player){
+        std::cout << player->getName() << " Won\n";
+    } else if (winner == nullptr) {
+        std::cout << "Draw\n"; 
+    } else {
+        std::cout << "Computer Won\n"; 
+    }
 
     return 0;
 }

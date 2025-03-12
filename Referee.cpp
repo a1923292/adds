@@ -3,8 +3,6 @@
 #include <exception>
 
 
-
-
 Player* Referee::refGame(Player* player1, Player* player2) const {
     Move* player1Move = player1->makeMove();
     Move* player2Move = player2->makeMove();

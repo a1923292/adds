@@ -6,7 +6,7 @@
 class Computer : public Player {
     private:
     public:
-        Computer() : Player("Computer",'R') {}
+        Computer();
         Move* makeMove() override;
 };
 
