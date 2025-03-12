@@ -11,4 +11,5 @@ class Human : public Player {
         Human(std::string name_) : Player(name_) {}
         Human() : Player("Human") {}
         Move* makeMove() override;
+        Move* moveFactory(const std::string& objectType) noexcept;
 };

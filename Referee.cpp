@@ -11,12 +11,14 @@ Player* Referee::refGame(Player* player1, Player* player2) const {
         return nullptr;
     } else {
         // check forbidden choices
-        if (std::find((player1Move->getForbiddenChoices()).begin(),(player1Move->getForbiddenChoices()).end(),player2Move->getName()) != (player1Move->getForbiddenChoices()).end()){
+        std::vector<std::string> forbidden = player1Move->getForbiddenChoices();
+        std::vector<std::string> winningComb = player1Move->getWinningCombinations();
+        if (std::find(forbidden.begin(),forbidden.end(),player2Move->getName()) != forbidden.end()){
             // if player2s move is forbidden choice then return nullptr
             return nullptr;
         }
         // check if any of player1s winningCombinations matches with player2s move
-        return (std::find((player1Move->getWinningCombinations()).begin(),(player1Move->getWinningCombinations()).end(),player2Move->getName()) == (player1Move->getWinningCombinations()).end()) 
+        return (std::find(winningComb.begin(),winningComb.end(),player2Move->getName()) == winningComb.end()) 
         ? player2 : player1; 
     }
     throw std::runtime_error("Something somewhere went wrong");
