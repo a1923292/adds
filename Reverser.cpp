@@ -16,17 +16,9 @@ int Reverser::reverseDigit(int x){
 
 std::string Reverser::reverseString(std::string x){
     if (x.empty()) {
-        return ""; 
-    }
-    if (this->right == -1) this->right = x.length()-1;
-    if (left >= right) {
         return x;
-    } else {
-        std::swap(x[left], x[right]);
-        left++;
-        right--;
-        return reverseString(x);
     }
+    return reverseString(x.substr(1)) + x[0];
 }
 
 
