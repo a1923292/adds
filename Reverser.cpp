@@ -7,10 +7,8 @@ int Reverser::reverseDigit(int x){
     if (x == 0) {
         return this->xresult;
     } else {
-        this->xresult *= 10;
-        this->xresult += (x % 10);
-        x /= 10;
-        return reverseDigit(x);
+        this->xresult = this->xresult * 10 + (x % 10);
+        return reverseDigit(x / 10);
     }
 }   
 
