@@ -15,13 +15,16 @@ int Reverser::reverseDigit(int x){
 }   
 
 std::string Reverser::reverseString(std::string x){
-    this->right = x.size()-1;
-    if (x.length() == 0) return "";
-    if (left + moveIn > right - moveIn){
+    if (x.empty()) {
+        return ""; 
+    }
+    if (this->right == -1) this->right = x.length()-1;
+    if (left >= right) {
         return x;
     } else {
-        std::swap(x[left+moveIn],x[right-moveIn]);
-        moveIn++;
+        std::swap(x[left], x[right]);
+        left++;
+        right--;
         return reverseString(x);
     }
 }
