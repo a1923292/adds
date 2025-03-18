@@ -1,4 +1,4 @@
-#include "Reverser.hpp"
+#include "Reverser.h"
 
 int Reverser::reverseDigit(int x){
     if (x < 0){
