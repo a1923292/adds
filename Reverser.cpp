@@ -17,7 +17,6 @@ int Reverser::reverseDigit(int x){
 std::string Reverser::reverseString(std::string x){
     this->right = x.size()-1;
     if (x.length() == 0) return "";
-    if (x.length() == 1) return x;
     if (left + moveIn > right - moveIn){
         return x;
     } else {
