@@ -1,10 +1,12 @@
 #include "Reverser.h"
+#include <iostream>
 
 int Reverser::reverseDigit(int x){
     if (x < 0){
         return -1;
     } 
     if (x == 0) {
+        std::cout << result << std::endl;
         return result;
     } else {
         int modVal = x % 10;
