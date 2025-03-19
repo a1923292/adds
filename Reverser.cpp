@@ -10,7 +10,7 @@ int Reverser::reverseDigit(int x){
         int modVal = x % 10;
         result *= 10;
         result += modVal;
-        reverseDigit(x / 10);
+        return reverseDigit(x / 10);
     }
 }   
 
