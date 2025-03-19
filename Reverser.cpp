@@ -7,8 +7,9 @@ int Reverser::reverseDigit(int x){
     if (x == 0) {
         return result;
     } else {
+        int modVal = x % 10;
         result *= 10;
-        result += (x % 10);
+        result += modVal;
         reverseDigit(x / 10);
     }
 }   
