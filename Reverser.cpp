@@ -1,14 +1,14 @@
 #include "Reverser.h"
 
 int Reverser::reverseDigit(int x){
-    static int result = 0;
     if (x < 0){
         return -1;
     } 
     if (x == 0) {
         return result;
     } else {
-        result = result * 10 + (x % 10);
+        result *= 10;
+        result += (x % 10);
         reverseDigit(x / 10);
     }
 }   
