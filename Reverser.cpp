@@ -9,7 +9,7 @@ int Reverser::reverseDigit(int x){
         return result;
     } else {
         result = result * 10 + (x % 10);
-        return reverseDigit(x / 10);
+        reverseDigit(x / 10);
     }
 }   
 
