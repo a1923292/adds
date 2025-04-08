@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/elihinton/Desktop/2024:2025/uni-2/adds/prac5",
+      "program": "/Users/elihinton/Desktop/2024:2025/uni-2/adds/prac5/build/Debug/outDebug"
+    }
+  ]
+}
