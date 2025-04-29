@@ -10,6 +10,6 @@ public:
     bool deletePosition(int pos);
     int get(int pos);
     int search(int target);
-    void printlist();
+    void printList();
     ~LinkedList();
 };

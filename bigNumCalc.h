@@ -3,7 +3,7 @@
 #include <list>
 #include <string>
 
-class bigNumCalc {
+class BigNumCalc {
     std::list<int> list;
 public:
     std::list<int> buildBigNum(std::string numString);

@@ -9,7 +9,7 @@ void removeLeadingZeros(std::list<int>& num) {
     }
 }
 
-std::list<int> bigNumCalc::buildBigNum(std::string numString) {
+std::list<int> BigNumCalc::buildBigNum(std::string numString) {
     std::list<int> result;
     for (char ch : numString) {
         if (isdigit(ch)) {
@@ -19,7 +19,7 @@ std::list<int> bigNumCalc::buildBigNum(std::string numString) {
     return result;
 }
 
-std::list<int> bigNumCalc::add(std::list<int> num1, std::list<int> num2) {
+std::list<int> BigNumCalc::add(std::list<int> num1, std::list<int> num2) {
     std::list<int> result;
     auto it1 = num1.rbegin();
     auto it2 = num2.rbegin();
@@ -36,7 +36,7 @@ std::list<int> bigNumCalc::add(std::list<int> num1, std::list<int> num2) {
     return result;
 }
 
-std::list<int> bigNumCalc::sub(std::list<int> num1, std::list<int> num2) {
+std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2) {
     std::list<int> result;
     auto it1 = num1.rbegin();
     auto it2 = num2.rbegin();
@@ -60,7 +60,7 @@ std::list<int> bigNumCalc::sub(std::list<int> num1, std::list<int> num2) {
     return result;
 }
 
-std::list<int> bigNumCalc::mul(std::list<int> num1, std::list<int> num2) {
+std::list<int> BigNumCalc::mul(std::list<int> num1, std::list<int> num2) {
     if (num2.size() != 1) {
         throw std::invalid_argument("Only single-digit multipliers supported.");
     }

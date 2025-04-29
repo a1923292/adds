@@ -95,7 +95,7 @@ int LinkedList::search(int target) {
     return -1;
 }
 
-void LinkedList::printlist() {
+void LinkedList::printList() {
     Node* dummy = head;
     while (dummy != nullptr) {
         std::cout << dummy->data << " ";
